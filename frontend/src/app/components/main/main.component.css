@@ -1,0 +1,39 @@
+.wrapper {
+  margin-left: 22%;
+}
+
+
+button {
+  background-color: #111928;
+  color: #ffffff; 
+  padding: 8px 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .3s;
+
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  display: flex;
+  height: 100vh; /* 100% высоты экрана */
+}
+
+.half {
+  flex: 1; /* Равномерное распределение пространства между элементами */
+  border: 1px solid #ddd; /* Для наглядности границ между частями */
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+}

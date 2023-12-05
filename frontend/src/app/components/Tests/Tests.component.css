@@ -1,0 +1,39 @@
+
+
+.wrapper {
+    margin-left: 20%;
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+    width: 76%;
+}
+
+
+.tests {
+    background-color: rgba(128, 128, 128, 0.363);
+    margin: 10px;
+    width: 85%;
+}
+
+.submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 15px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #2C5282;
+    text-align: center;
+    color: #FFFFFF;
+    transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+    background-color: #0b3b75;
+}
+
+.hidden {
+    display: block;
+}
+

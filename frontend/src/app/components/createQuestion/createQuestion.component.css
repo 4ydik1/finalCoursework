@@ -1,0 +1,76 @@
+/* createQuestion.component.css */
+
+.wrapper {
+  background-color: rgba(92, 91, 97, 0.459);
+  padding: 20px;
+  border-radius: 8px;
+  margin:  1% 10% 0% 20%;
+}
+
+h2 {
+  color: white;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  color: white; /* Зеленый цвет текста для меток */
+}
+
+input, button, select {
+  margin-top: 5px;
+  margin: 7px;
+  padding: 5px;
+}
+
+.options {
+  border: 1px solid #F1F3F6;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+
+button {
+  background-color: #111928; /* Зеленый цвет фона для кнопок */
+  color: #ffffff; /* Белый цвет текста для кнопок */
+  padding: 8px 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .3s;
+
+}
+
+.submitTest {
+  margin-left: 15%;
+}
+
+.addQuestion {
+  margin-left: 15%;
+}
+button:hover {
+  background-color: #218838; /* Темно-зеленый цвет фона при наведении на кнопку */
+}
+
+button.disabled:hover {
+  cursor: not-allowed;
+  background-color: #D1D5DB;
+}
+.disabled {
+  background-color: #D1D5DB;
+}
+
+.options {
+  margin-top: 30px;
+}
+
+.addQuestion {
+  margin-left: 30%;
+}
+
+.submitTest {
+margin-left: 15%;
+
+}

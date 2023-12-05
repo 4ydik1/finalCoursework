@@ -1,0 +1,18 @@
+<!--  Tests.component.html  -->
+<div class="wrapper">
+
+
+<div *ngFor="let test of tests; let i = index" class="tests">
+    <h2>{{ test.quizName }}</h2>
+    <div
+      (click)="startTest(test.id, i)"
+      class="submit"
+    >
+  Почати тест
+
+  </div>
+
+    <span>Всього питань: {{testsLength[i]}}</span>
+      </div>  
+  
+   </div> 

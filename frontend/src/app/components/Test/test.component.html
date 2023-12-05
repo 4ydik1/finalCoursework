@@ -1,0 +1,36 @@
+
+
+   <div class="wrapper">
+    <h2>Тест {{questionData?.quizName}}</h2>
+    <div class="questions" *ngFor="let item of questionData?.questions let i = index">
+       <span class="title">Питання {{i + 1}}. {{item.title}} </span> 
+       
+        <div class="options" *ngFor="let item of questionData?.questions[i]?.options let j = index">
+            <input type="checkbox" [(ngModel)]="selectedOptions[i][j]"/>
+            <span class="option-text"> {{j + 1}}.  {{item.text}} </span>
+          
+
+        </div> 
+        <button 
+        class="submit"
+        (click)="answer(i + 1, selectedOptions[i])"
+        [disabled]="buttonDisabled[i]"
+        [ngClass]="{'disabled': buttonDisabled[i]}"
+        >
+        Далі
+    </button>
+    </div>
+    
+   </div>
+
+   <ng-container *ngIf='isQuizCompleted'>
+    <div class="finish">
+        <div class="results">
+            <br>
+            <h1>Результат тесту : {{questionData?.quizName}}</h1>
+            <p>Всього питань : {{questionData.questions?.length}}</p>
+            <p>Всього правильних відповідей : {{correctAnswer}}</p>
+            <p>Всього неправильних відповідей  : {{inCorrectAnswer}}</p>
+        </div>
+    </div>
+</ng-container> 

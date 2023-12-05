@@ -1,0 +1,52 @@
+.wrapper {
+    margin-left:22%;
+}
+
+
+.options {
+  background-color: #F9FAFB;
+  padding: 10px;
+  margin: 20px;
+}
+ label {
+    /* padding: 20px; */
+     background-color:#F9FAFB;
+    font-size: 20px;
+}
+
+.submit {
+    width: 70px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #2C5282;
+    text-align: center;
+    color: #FFFFFF;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.disabled {
+  background-color: #D1D5DB;
+}
+.questions {
+  margin: 7% 20%;
+}
+.submit:hover {
+    background-color: #1F3A4E; /* Затемненный оттенок */
+    color: #DDDDDD;
+}
+.finish {
+    margin-left: 25%;
+    border: 1px solid black;
+    width: 60%;
+}
+
+.results {
+  padding: 5px;
+  margin: 5px;
+  background-color: #D1D5DB;
+}
+button.submit[disabled]:hover {
+  cursor: not-allowed; 
+  background-color: #D1D5DB;
+  color: #DDDDDD;
+}

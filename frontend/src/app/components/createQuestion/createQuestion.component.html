@@ -1,0 +1,30 @@
+<div>
+    <div class="wrapper">
+      <h2>Створення тесту</h2>
+      <label for="testName">Назва тесту:</label>
+      <input [(ngModel)]="testName" id="testName" autocomplete="off"/>
+
+      <div *ngFor="let question of questions; let i = index" class="options">
+        <h3>Питання {{ i + 1 }}</h3>
+        <label for="questionTitle">Назва питання:</label>
+        <input [(ngModel)]="question.title" id="questionTitle" required autocomplete="off"/>
+
+        <div *ngFor="let option of question.options; let j = index">
+          <label for="option{{ i }}{{ j }}">Варіант відповіді {{ j + 1 }}:</label>
+          <input [(ngModel)]="option.text" id="option{{ i  }}{{ j   }}" required autocomplete="off"/>
+          <label>
+            Правильний:
+            <input type="checkbox" [(ngModel)]="option.correct"/>
+          </label>
+          <button (click)="removeOption(i, j)">Видалити варіант відповіді</button>
+        </div>
+        <button (click)="addOption(i)" >Додати варіант відповіді</button>
+        <button (click)="removeQuestion(i)">Видалити питання</button>
+
+      </div>
+
+    </div>
+
+    <button (click)="addQuestion()" class="addQuestion">Додати питання</button>
+    <button (click)="submitTest()" [disabled]="!isFormValid()" class="submitTest" [ngClass]="{'disabled': !isFormValid()}">Відправити тест</button>
+  </div>
